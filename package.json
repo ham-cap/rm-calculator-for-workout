@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ham-cap/rm-calculator/issues"
   },
-  "homepage": "https://github.com/ham-cap/rm-calculator#readme"
+  "homepage": "https://github.com/ham-cap/rm-calculator#readme",
+  "dependencies": {
+    "enquirer": "^2.3.6"
+  }
 }
