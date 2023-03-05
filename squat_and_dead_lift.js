@@ -1,6 +1,6 @@
-module.exports = class BenchPress {
+module.exports = class SquatAndDeadLift {
   constructor() {
-    this.COEFFICIENT_OF_BENCH_PRESS = 40;
+    this.COEFFICIENT_OF_BENCH_PRESS = 33.3;
     this.COEFFICIENT_FOR_STRENGTH = 0.87;
     this.NUMBER_OF_REPETITION_FOR_STRENGTH = 5;
     this.COEFFICIENT_FOR_HYPERTROPHY = 0.8;
