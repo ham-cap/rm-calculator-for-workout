@@ -14,6 +14,17 @@ const isPositiveNumber = function (input) {
   }
 };
 
+const promptSelectAnExercise = new Select({
+  name: "exercises",
+  message: "Choose an exercise",
+  choices: ["Bench Press", "Squat", "Dead Lift"],
+});
+
+promptSelectAnExercise
+  .run()
+  .then((answer) => askWeightAndReps(answer))
+  .catch(console.error);
+
 const askWeightAndReps = function (answer) {
   console.log(`Answer:${answer}`);
   const selectedExercise =
@@ -37,17 +48,8 @@ const askWeightAndReps = function (answer) {
 
   promptEnterWeightAndReps
     .run()
-    .then((weightAndReps) => selectedExercise.calculateRm(weightAndReps))
+    .then((weightAndReps) =>
+      selectedExercise.displayRmAndRecommendation(weightAndReps)
+    )
     .catch(console.error);
 };
-
-const promptSelectAnExercise = new Select({
-  name: "exercises",
-  message: "Choose an exercise",
-  choices: ["Bench Press", "Squat", "Dead Lift"],
-});
-
-promptSelectAnExercise
-  .run()
-  .then((answer) => askWeightAndReps(answer))
-  .catch(console.error);
