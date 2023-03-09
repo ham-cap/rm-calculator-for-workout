@@ -9,7 +9,7 @@ module.exports = class Exercise {
     this.NUMBER_OF_SETS = 3;
   }
 
-  showRm(rm) {
+  showRepetitionMaximum(rm) {
     console.log(`あなたの現在の1RMは「 ${rm}kg 」です。`);
     console.log(
       "※注1：1RMとは「1 Repetition Maximum（最大挙上重量）」の略称であり、1回しか持ち上げられない重量を指します。"
@@ -19,7 +19,7 @@ module.exports = class Exercise {
     );
   }
 
-  recommendTrainingMenu(rm) {
+  showRecommendedTrainingMenu(rm) {
     const recommendedWeight = calculator.calculateRecommendedWeight(rm);
     console.log("");
     console.log("目的別の推奨メニューは以下のとおりです。");
@@ -35,12 +35,12 @@ module.exports = class Exercise {
     console.log("理想の身体を目指して頑張りましょう！");
   }
 
-  displayRmAndRecommendation(weightAndReps) {
-    const rm = calculator.calculateRm(
+  displayRepetitionMaximumAndRecommendation(weightAndReps) {
+    const rm = calculator.calculateRepetitionMaximum(
       weightAndReps,
-      this.COEFFICIENT_TO_CALCULATE_RM
+      this.COEFFICIENT_TO_CALCULATE_REPETITION_MAXIMUM
     );
-    this.showRm(rm);
-    this.recommendTrainingMenu(rm);
+    this.showRepetitionMaximum(rm);
+    this.showRecommendedTrainingMenu(rm);
   }
 };

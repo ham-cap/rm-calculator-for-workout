@@ -5,7 +5,7 @@ async function test() {
   const answer = await prompt.askAnExercise();
   const selectedExercise = await prompt.createAnExercise(answer);
   const weightAndReps = await prompt.askWeightAndReps();
-  selectedExercise.displayRmAndRecommendation(weightAndReps);
+  selectedExercise.displayRepetitionMaximumAndRecommendation(weightAndReps);
 }
 
 test();

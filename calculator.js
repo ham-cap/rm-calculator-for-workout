@@ -5,10 +5,15 @@ module.exports = class Calculator {
     this.COEFFICIENT_FOR_ENDURANCE = 0.65;
   }
 
-  calculateRm(weightAndReps, COEFFICIENT_TO_CALCULATE_RM) {
+  calculateRepetitionMaximum(
+    weightAndReps,
+    COEFFICIENT_TO_CALCULATE_REPETITION_MAXIMUM
+  ) {
     const weight = parseFloat(weightAndReps.weight);
     const reps = parseFloat(weightAndReps.reps);
-    return Math.round((weight * reps) / COEFFICIENT_TO_CALCULATE_RM + weight);
+    return Math.round(
+      (weight * reps) / COEFFICIENT_TO_CALCULATE_REPETITION_MAXIMUM + weight
+    );
   }
 
   calculateRecommendedWeight(rm) {
