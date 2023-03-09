@@ -10,29 +10,32 @@ module.exports = class Exercise {
   }
 
   showRepetitionMaximum(rm) {
-    console.log(`あなたの現在の1RMは「 ${rm}kg 」です。`);
+    console.log("");
+    console.log(`Your current 1RM* is about ${rm}kg.`);
     console.log(
-      "※注1：1RMとは「1 Repetition Maximum（最大挙上重量）」の略称であり、1回しか持ち上げられない重量を指します。"
+      "* One-Repetition Maximum. It means the heaviest weight you can lift only once."
     );
-    console.log(
-      "※注2：結果はあくまでも目安です。実際に扱える重量には個人差があります。"
-    );
+    console.log("** The result is only guideline.");
   }
 
   showRecommendedTrainingMenu(rm) {
     const recommendedWeight = calculator.calculateRecommendedWeight(rm);
     console.log("");
-    console.log("目的別の推奨メニューは以下のとおりです。");
     console.log(
-      `【筋力アップ】 ${recommendedWeight.for_strength}kg × ${this.NUMBER_OF_REPETITION_FOR_STRENGTH}回 × ${this.NUMBER_OF_SETS}セット`
+      "The recommended training menus based on the result are shown below. They are grouped by purposes."
     );
     console.log(
-      `【筋肥大】 ${recommendedWeight.for_hypertrophy}kg × ${this.NUMBER_OF_REPETITION_FOR_HYPERTROPHY}回 × ${this.NUMBER_OF_SETS}セット`
+      `Muscle Strength: ${recommendedWeight.for_strength}kg × ${this.NUMBER_OF_REPETITION_FOR_STRENGTH}times × ${this.NUMBER_OF_SETS}sets`
     );
     console.log(
-      `【筋持久力アップ】 ${recommendedWeight.for_endurance}kg × ${this.NUMBER_OF_REPETITION_FOR_ENDURANCE}回 × ${this.NUMBER_OF_SETS}セット`
+      `Muscle Hypertrophy: ${recommendedWeight.for_hypertrophy}kg × ${this.NUMBER_OF_REPETITION_FOR_HYPERTROPHY}times × ${this.NUMBER_OF_SETS}sets`
     );
-    console.log("理想の身体を目指して頑張りましょう！");
+    console.log(
+      `Muscle Endurance: ${recommendedWeight.for_endurance}kg × ${this.NUMBER_OF_REPETITION_FOR_ENDURANCE}times × ${this.NUMBER_OF_SETS}sets`
+    );
+    console.log("");
+    console.log("Let's enjoy your workout!!");
+    console.log("");
   }
 
   displayRepetitionMaximumAndRecommendation(weightAndReps) {

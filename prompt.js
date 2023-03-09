@@ -16,7 +16,6 @@ module.exports = class Prompt {
   }
 
   createAnExercise(answer) {
-    console.log(`Answer:${answer}`);
     const selectedExercise =
       answer === "Bench Press" ? new BenchPress() : new SquatAndDeadLift();
     return selectedExercise;
@@ -25,7 +24,8 @@ module.exports = class Prompt {
   askWeightAndReps() {
     const promptEnterWeightAndReps = new Form({
       name: "user",
-      message: "Please provide the following information:",
+      message:
+        "Please enter Weight and Reps(number of reqetitions you can lift with the weight).",
       choices: [
         {
           name: "weight",

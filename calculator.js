@@ -17,10 +17,10 @@ module.exports = class Calculator {
   }
 
   calculateRecommendedWeight(rm) {
-    return {
+    return Object.freeze({
       for_strength: Math.round(rm * this.COEFFICIENT_FOR_STRENGTH),
       for_hypertrophy: Math.round(rm * this.COEFFICIENT_FOR_HYPERTROPHY),
       for_endurance: Math.round(rm * this.COEFFICIENT_FOR_ENDURANCE),
-    };
+    });
   }
 };
