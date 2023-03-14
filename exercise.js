@@ -25,13 +25,13 @@ module.exports = class Exercise {
       "The recommended training menus based on the result are shown below. They are grouped by purposes."
     );
     console.log(
-      `Muscle Strength: ${recommendedWeight.for_strength}kg × ${this.NUMBER_OF_REPETITION_FOR_STRENGTH}times × ${this.NUMBER_OF_SETS}sets`
+      `For Muscle Strength: ${recommendedWeight.for_strength}kg × ${this.NUMBER_OF_REPETITION_FOR_STRENGTH}times × ${this.NUMBER_OF_SETS}sets`
     );
     console.log(
-      `Muscle Hypertrophy: ${recommendedWeight.for_hypertrophy}kg × ${this.NUMBER_OF_REPETITION_FOR_HYPERTROPHY}times × ${this.NUMBER_OF_SETS}sets`
+      `For Muscle Hypertrophy: ${recommendedWeight.for_hypertrophy}kg × ${this.NUMBER_OF_REPETITION_FOR_HYPERTROPHY}times × ${this.NUMBER_OF_SETS}sets`
     );
     console.log(
-      `Muscle Endurance: ${recommendedWeight.for_endurance}kg × ${this.NUMBER_OF_REPETITION_FOR_ENDURANCE}times × ${this.NUMBER_OF_SETS}sets`
+      `For Muscle Endurance: ${recommendedWeight.for_endurance}kg × ${this.NUMBER_OF_REPETITION_FOR_ENDURANCE}times × ${this.NUMBER_OF_SETS}sets`
     );
     console.log("");
     console.log("Let's enjoy your workout!!");
