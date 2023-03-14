@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const Prompt = require("./prompt.js");
 const prompt = new Prompt();
 
