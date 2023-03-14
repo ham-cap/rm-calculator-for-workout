@@ -3,15 +3,13 @@ This package can calculate your One-Repetition Maximum(1RM) in the BIG 3 workout
 
 ## Installation
 ```
-$ npm install rm-calculator
+$ npm install rm-calculator-for-workout
 ```
 
 ## Usage
-```
-1. Execute `npx rm-calculator`.
+1. Execute `npx rm-calculator-for-workout`.
 2. Choose an exercise from three options.
 3. Enter weight and number of repetitions.
-```
 
 ## Note
 ### What's One-Repetition Maximum(1RM) ?
