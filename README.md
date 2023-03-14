@@ -7,7 +7,7 @@ $ npm install rm-calculator-for-workout
 ```
 
 ## Usage
-1. Execute `npx rm-calculator-for-workout`.
+1. Execute `npx rm-calculator`.
 2. Choose an exercise from three options.
 3. Enter weight and number of repetitions.
 
