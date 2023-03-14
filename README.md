@@ -1,4 +1,4 @@
-# RM-Calculator
+# RM-Calculator-For-Workout
 This package can calculate your One-Repetition Maximum(1RM) in the BIG 3 workout and show recommended training menus based on the result.
 
 ## Installation
