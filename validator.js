@@ -3,7 +3,7 @@ module.exports = class Validator {
     const [weight, reps] = Object.values(input).map((value) =>
       parseFloat(value)
     );
-    if (typeof weight === "number" && typeof weight === "number") {
+    if (typeof weight === "number" && typeof reps === "number") {
       if (weight > 0 && reps > 0) {
         return true;
       }
