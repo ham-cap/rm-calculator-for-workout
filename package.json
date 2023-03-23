@@ -1,6 +1,6 @@
 {
   "name": "rm-calculator-for-workout",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This package can calculate your One-Repetition Maximum(1RM) in the BIG 3 workout and show recommended training menus based on the result.",
   "main": "./index.js",
   "bin": {
